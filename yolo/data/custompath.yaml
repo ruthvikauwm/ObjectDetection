@@ -1,0 +1,37 @@
+#natural_only
+train: /content/yolov5/natural_only/images/train
+val: /content/yolov5/natural_only/images/val
+# test:  /content/drive/MyDrive/CV_Project/Dataset/YOLO_TEST
+# #natural_aug
+# train: /content/yolov5/natural_aug/images/train
+# val: /content/yolov5/natural_aug/images/val
+# test:  /content/drive/MyDrive/CV_Project/Dataset/YOLO_TEST
+# #natural_gan_sd
+# train: /content/yolov5/natural_gan_sd/images/train
+# val: /content/yolov5/natural_gan_sd/images/val
+# test:  /content/drive/MyDrive/CV_Project/Dataset/YOLO_TEST
+# #gan_sd
+# train: /content/yolov5/gan_sd/images/train
+# val: /content/yolov5/gan_sd/images/val
+# test:  /content/drive/MyDrive/CV_Project/Dataset/YOLO_TEST
+# #natural_sd_aug
+# train: /content/yolov5/natural_sd_aug/images/train
+# val: /content/yolov5/natural_sd_aug/images/val
+# test:  /content/drive/MyDrive/CV_Project/Dataset/YOLO_TEST
+# #natural_gan_sd_aug
+# train: /content/yolov5/natural_gan_sd_aug/images/train
+# val: /content/yolov5/natural_gan_sd_aug/images/val
+# test:  /content/drive/MyDrive/CV_Project/Dataset/YOLO_TEST
+nc: 10
+# Classes
+names:
+  0: airplane
+  1: bicycle
+  2: boat
+  3: bus
+  4: car
+  5: dog
+  6: motorcycle
+  7: person
+  8: train
+  9: truck
