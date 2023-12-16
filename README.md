@@ -1,4 +1,4 @@
-**Data Augmentation for Object Detection**
+# Data-Augmentation-for-Object-Detection
 
 **Step 1: Training Data Creation:**
 
@@ -32,4 +32,4 @@ The Object Detection Test.ipynb file includes code to execute the model against 
 
 Executing metrics.ipynb generates the necessary graphs to evaluate the model's performance.
 
-# Data-Augmentation-for-Object-Detection
+
