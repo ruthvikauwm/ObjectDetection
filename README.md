@@ -1,5 +1,7 @@
 # Data-Augmentation-for-Object-Detection
 
+![Architecture](https://github.com/ruthvikauwm/ObjectDetection/assets/54182107/bb62cf47-f627-4b66-9653-e1f095ca39d2)
+
 **Step 1: Training Data Creation:**
 
 We've selected a specific number of images from the COCO dataset for 10 labels and annotated them using the tool available at https://www.makesense.ai/. These images have been generated using basic augmentation techniques like rotation, flip, resize, and reshape, along with SD and GAN techniques. The GAN code is available in the file Icgan_colab.ipynb. The resulting images are stored in zip files named YOLO_NATURAL, YOLO_AUG, YOLO_GAN, and YOLO_SD on our drive.
