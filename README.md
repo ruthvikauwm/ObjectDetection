@@ -1,4 +1,4 @@
-##Data Augmentation using Stable Diffusions for improving Object Detection performance
+## Data Augmentation using Stable Diffusions for improving Object Detection performance
 
 ## 1. Introduction
 
