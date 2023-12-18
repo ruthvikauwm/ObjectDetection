@@ -9,6 +9,32 @@ Object detection is a crucial task in computer vision, with applications in vari
 
 ## 3. Installations
 
+To set up the project environment and install the required packages, follow the steps below. 
+Note: This project execution requires a lot of memory resources and GPU. It would take a few hours to generate the images and complete the training process.
+
+### 1. Virtual Environment
+
+### Step 1: Create a Conda Environment
+# Create a conda environment
+conda create --name cs762project python=3.8
+
+# Activate the conda environment (Linux/Mac/Windows)
+conda activate cs762project
+
+### Step 2: Install required packages
+# Install required packages
+```
+pip install numpy torch torchvision imageio pillow scipy nltk cma scikit-learn
+```
+```
+pip install transformers scipy ftfy
+```
+```
+pip install diffusers==0.4.0
+```
+```
+pip install "ipywidgets>=7,<8"
+```
 **Step 1: Training Data Creation:**
 
 We've selected a specific number of images from the COCO dataset for 10 labels and annotated them using the tool available at https://www.makesense.ai/. These images have been generated using basic augmentation techniques like rotation, flip, resize, and reshape, along with SD and GAN techniques. The GAN code is available in the file Icgan_colab.ipynb. The resulting images are stored in zip files named YOLO_NATURAL, YOLO_AUG, YOLO_GAN, and YOLO_SD on our drive.
