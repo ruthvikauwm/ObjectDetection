@@ -12,16 +12,16 @@ Object detection is a crucial task in computer vision, with applications in vari
 To set up the project environment and install the required packages, follow the steps below. 
 Note: This project execution requires a lot of memory resources and GPU. It would take a few hours to generate the images and complete the training process.
 
-### 1. Virtual Environment
-
-### Step 1: Create a Conda Environment
+# Step 1: Create a Conda Environment
 # Create a conda environment
+```
 conda create --name cs762project python=3.8
-
+```
 # Activate the conda environment (Linux/Mac/Windows)
+```
 conda activate cs762project
-
-### Step 2: Install required packages
+```
+# Step 2: Install required packages
 # Install required packages
 ```
 pip install numpy torch torchvision imageio pillow scipy nltk cma scikit-learn
