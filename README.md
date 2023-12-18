@@ -1,4 +1,4 @@
-# ObjectDetection
+# Data Augmentation using Stable Diffusions for inmproving Object Detection performance.
 
 ![Architecture](https://github.com/ruthvikauwm/ObjectDetection/assets/54182107/67582425-67b5-45e7-8a86-863f5e4c682c)
 
