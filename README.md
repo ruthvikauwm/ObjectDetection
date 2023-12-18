@@ -1,4 +1,9 @@
-# Data Augmentation using Stable Diffusions for inmproving Object Detection performance.
+# Data Augmentation using Stable Diffusions for improving Object Detection performance
+
+**Introduction**
+Object detection is a crucial task in computer vision, with applications in various domains such as autonomous driving, surveillance, and medical imaging. Deep learning models have shown remarkable performance in this task, but their effectiveness relies on large and diverse datasets for training. Collecting such datasets is expensive, time-consuming, and prone to bias and class imbalance issues. To address this challenge, this project proposes a novel approach to synthetic image data augmentation using Large Language Models (LLMs). The project aims to fill the gap in existing research by exploring advanced techniques to generate high-quality synthetic images for improving object detection.
+
+**Proposed Method**
 
 ![Architecture](https://github.com/ruthvikauwm/ObjectDetection/assets/54182107/67582425-67b5-45e7-8a86-863f5e4c682c)
 
