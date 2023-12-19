@@ -41,7 +41,15 @@ We've selected a specific number of images from the COCO dataset (https://cocoda
 
 The COCODataSubsetCreation.ipynb file contains the code to extract only the images related to the specified labels from the entire COCO dataset.
 
-The TrainDataCreation.ipynb file manages unzipping these folders from the drive after mounting it. It generates various combinations of data such as natural_only, natural_aug, natural_gan_sd, gan_sd, natural_sd_aug, and natural_gan_sd_aug. These combinations are organized into images and labels folders for both training and validation purposes.
+The TrainDataCreation.ipynb file manages unzipping these folders from the drive after mounting it. It generates various combinations of data such as 
+1. natural_only
+2. natural_aug
+3. natural_gan_sd
+4. gan_sd
+5. natural_sd_aug
+6. natural_gan_sd_aug.
+
+These combinations are organized into images and labels folders for both training and validation purposes.
 
 Note: We've conducted experiments involving textual inversion with our Stable Diffusion model. Further details can be found in the documentation at https://huggingface.co/docs/diffusers/training/text_inversion
 
@@ -66,6 +74,14 @@ This command prompts the model to detect objects in the images within the YOLO_T
 The Object Detection Test.ipynb file includes code to execute the model against the 6 datasets and store the results.
 
 ## Step 7: Metrics Calculation
+
+To evaluate the effectiveness of synthetic data augmentation in improving object detection performance and the model’s generalization ability, we utilized several standard evaluation metrics.
+
+1. TP,FP,FN:- True Positives, False Positive, False Negative
+2. Recall:- TP / (TP + FN)
+3. Precision:- TP / (TP + FP)
+4. F1 Score:- 2 * (Precision * Recall) / (Precision + Recall)
+5. mAP:- (AP1 + AP2 + ... + APₙ) / n
 
 Executing metrics.ipynb generates the necessary graphs to evaluate the model's performance.
 
