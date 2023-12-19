@@ -43,7 +43,7 @@ The COCODataSubsetCreation.ipynb file contains the code to extract only the imag
 
 The TrainDataCreation.ipynb file manages unzipping these folders from the drive after mounting it. It generates various combinations of data such as natural_only, natural_aug, natural_gan_sd, gan_sd, natural_sd_aug, and natural_gan_sd_aug. These combinations are organized into images and labels folders for both training and validation purposes.
 
-Note: We have also experimented using the textual inversion on our Stable Diffusion model. 
+Note: We've conducted experiments involving textual inversion with our Stable Diffusion model. Further details can be found in the documentation at https://huggingface.co/docs/diffusers/training/text_inversion
 
 ## Step 4: Testing Data Creation
 
