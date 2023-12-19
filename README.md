@@ -37,7 +37,9 @@ pip install "ipywidgets>=7,<8"
 
 ## Step 3: Training Data Creation
 
-We've selected a specific number of images from the COCO dataset (https://cocodataset.org/#download) for 10 labels and annotated them using the tool available at https://www.makesense.ai/. These images have been generated using basic augmentation techniques like rotation, flip, resize, and reshape, along with SD and GAN techniques. The GAN code is available in the file Icgan_colab.ipynb and the SD code is available in the file Stable Diffusion.ipynb. The resulting images are stored in zip files named YOLO_NATURAL, YOLO_AUG, YOLO_GAN, and YOLO_SD on our drive.
+Our dataset is curated from three parts, the original set, the synthetic set, and the test set. For the original set, we utilized the COCO 2017 dataset (https://cocodataset.org/#download), which is a widely used benchmark dataset for object detection, segmentation, and captioning. This dataset contains over 330,000 images with more than 2.5 million object instances labeled across 80 categories. We specifically used the COCO train 2017 dataset, which is a subset of the larger COCO dataset containing 118,287 images. 
+
+We've selected a specific number of images from the COCO dataset for 10 labels and annotated them using the tool available at https://www.makesense.ai/. These images have been generated using basic augmentation techniques like rotation, flip, resize, and reshape, along with SD and GAN techniques. The GAN code is available in the file Icgan_colab.ipynb and the SD code is available in the file Stable Diffusion.ipynb. The resulting images are stored in zip files named YOLO_NATURAL, YOLO_AUG, YOLO_GAN, and YOLO_SD on our drive.
 
 The COCODataSubsetCreation.ipynb file contains the code to extract only the images related to the specified labels from the entire COCO dataset.
 
