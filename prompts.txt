@@ -1,0 +1,10 @@
+airplane
+bicycle
+boat
+bus
+car
+dog
+motorcycle
+person
+train
+truck

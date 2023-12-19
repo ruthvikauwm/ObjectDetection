@@ -37,11 +37,13 @@ pip install "ipywidgets>=7,<8"
 
 ## Step 3: Training Data Creation
 
-We've selected a specific number of images from the COCO dataset (https://cocodataset.org/#download) for 10 labels and annotated them using the tool available at https://www.makesense.ai/. These images have been generated using basic augmentation techniques like rotation, flip, resize, and reshape, along with SD and GAN techniques. The GAN code is available in the file Icgan_colab.ipynb. The resulting images are stored in zip files named YOLO_NATURAL, YOLO_AUG, YOLO_GAN, and YOLO_SD on our drive.
+We've selected a specific number of images from the COCO dataset (https://cocodataset.org/#download) for 10 labels and annotated them using the tool available at https://www.makesense.ai/. These images have been generated using basic augmentation techniques like rotation, flip, resize, and reshape, along with SD and GAN techniques. The GAN code is available in the file Icgan_colab.ipynb and the SD code is available in the file Stable Diffusion.ipynb. The resulting images are stored in zip files named YOLO_NATURAL, YOLO_AUG, YOLO_GAN, and YOLO_SD on our drive.
 
 The COCODataSubsetCreation.ipynb file contains the code to extract only the images related to the specified labels from the entire COCO dataset.
 
 The TrainDataCreation.ipynb file manages unzipping these folders from the drive after mounting it. It generates various combinations of data such as natural_only, natural_aug, natural_gan_sd, gan_sd, natural_sd_aug, and natural_gan_sd_aug. These combinations are organized into images and labels folders for both training and validation purposes.
+
+Note: We have also experimented using the textual inversion on our Stable Diffusion model. 
 
 ## Step 4: Testing Data Creation
 
