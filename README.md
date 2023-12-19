@@ -8,10 +8,10 @@ Object detection is a crucial task in computer vision, with applications in vari
 <!-- ![Architecture](https://github.com/ruthvikauwm/ObjectDetection/assets/54182107/bb62cf47-f627-4b66-9653-e1f095ca39d2) -->
 ![proposed_architecture](https://github.com/ruthvikauwm/ObjectDetection/assets/34669956/4ab63cf1-17ba-4f89-a09c-ae6bd4193781)
 
-## 3. Installations
+## 3. Project Implementation
 
 To set up the project environment and install the required packages, follow the steps below. 
-Note: This project execution requires a lot of memory resources and GPU. It would take a few hours to generate the images and complete the training process.
+Note: Executing this project demands substantial memory resources and GPU capacity. The image generation and training processes are anticipated to take several hours. We recommend implementing it in a GPU environment instead of a Conda environment for optimal performance and efficiency.
 
 ## Step 1: Create a Conda Environment
 ```
@@ -37,9 +37,7 @@ pip install "ipywidgets>=7,<8"
 
 ## Step 3: Training Data Creation
 
-Our dataset is curated from three parts, the original set, the synthetic set, and the test set. For the original set, we utilized the COCO 2017 dataset (https://cocodataset.org/#download), which is a widely used benchmark dataset for object detection, segmentation, and captioning. This dataset contains over 330,000 images with more than 2.5 million object instances labeled across 80 categories. We specifically used the COCO train 2017 dataset, which is a subset of the larger COCO dataset containing 118,287 images. 
-
-We've selected a specific number of images from the COCO dataset for 10 labels and annotated them using the tool available at https://www.makesense.ai/. These images have been generated using basic augmentation techniques like rotation, flip, resize, and reshape, along with SD and GAN techniques. The GAN code is available in the file Icgan_colab.ipynb and the SD code is available in the file Stable Diffusion.ipynb. The resulting images are stored in zip files named YOLO_NATURAL, YOLO_AUG, YOLO_GAN, and YOLO_SD on our drive.
+Our dataset is curated from three parts, the original set, the synthetic set, and the test set. For the original set, we utilized the COCO 2017 dataset (https://cocodataset.org/#download), which is a widely used benchmark dataset for object detection, segmentation, and captioning. This dataset contains over 330,000 images with more than 2.5 million object instances labeled across 80 categories. We specifically used the COCO train 2017 dataset, which is a subset of the larger COCO dataset containing 118,287 images. To augment our dataset, we explored two methods - Generative Adversarial Networks (GANs) and Stable Diffusions step.
 
 The COCODataSubsetCreation.ipynb file contains the code to extract only the images related to the specified labels from the entire COCO dataset.
 
